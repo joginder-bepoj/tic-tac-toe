@@ -1,0 +1,17 @@
+button {
+    background: #ea4c89;
+    border: none;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+    color: yellow;
+    padding: 18px 27px;
+}
+
+.squarehighlight {
+    background: lightgreen;
+    color: rgb(68, 68, 68);
+    height: 80px;
+    width: 80px;
+}

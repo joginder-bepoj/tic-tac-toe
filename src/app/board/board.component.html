@@ -1,0 +1,7 @@
+<button *ngIf="!value">{{ value }}</button>
+<button *ngIf="value == 'X'" [ngClass]="{ squarehighlight: isActive(index) }">
+  {{ value }}
+</button>
+<button *ngIf="value == 'O'" [ngClass]="{ squarehighlight: isActive(index) }">
+  {{ value }}
+</button>

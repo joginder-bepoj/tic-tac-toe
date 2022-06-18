@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  text-shadow: 3px 3px 0 #222, 5px 5px 0 #378fe5;
+  color: #007ace;
+  font-size: 45px;
+}
+
+main {
+  border: 2px solid lightyellow;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  margin: 0px auto;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+app-board {
+  background: rgb(234, 76, 137);
+  border: 2px solid lightyellow;
+}
+
+.content {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.description {
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: rgb(55, 143, 229);
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}

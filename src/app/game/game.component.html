@@ -1,0 +1,25 @@
+<div>
+  <h1>TIC TAC TOE</h1>
+</div>
+<main>
+  <app-board
+    *ngFor="let val of sqaures; let i = index"
+    [value]="val"
+    [winner]="winner"
+    [index]="i"
+    (click)="makeMove(i)"
+  ></app-board>
+</main>
+<div class="content">
+  <p class="description" *ngIf="!winner && !isDraw">
+    Next Player: {{ player }}
+  </p>
+  <p class="description" *ngIf="isDraw">The Game Is Drawn</p>
+  <p class="description" *ngIf="winner">WINNER : {{ winner.winner }}</p>
+  <button class="btn" (click)="newGame()" *ngIf="!winner && !isDraw">
+    Reset Game
+  </button>
+  <button class="btn" (click)="newGame()" *ngIf="winner || isDraw">
+    Play Again
+  </button>
+</div>
